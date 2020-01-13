@@ -363,7 +363,7 @@
 
 - 作成したキーペア(秘密鍵)をオーナー以外が使用できないように読み書き権限を行う
 ```terminal
-$ chmomd 600 {秘密鍵}.pem
+$ chmod 600 {秘密鍵}.pem
 ```
 - EC2/インスタンス　作成したインスタンスを選択
 - IPv4パブリックIPをコピー(パブリックIPアドレス)
@@ -407,3 +407,43 @@ $ sudo lsof -i -n -P
 -  NAMEに`(LISTEN)`は他のコンピューターから待ち受けているプログラム
 - `(ESTABLISHED)`は相手と通信中のプログラム
 - NAMEに`*`はどの接続元でも受け付けるプログラム
+
+### Apacheをインストール
+
+- sshにログイン
+```terminal
+$ ssh -i {秘密鍵}.pem ec2-user@{IPv4パブリックIP}
+```
+- EC2のパッケージ(yum)をupdate
+```terminal
+$ sudo yum update -y
+```
+- sudoはrootユーザーの権限で実行
+- Apacheをinstall
+```terminal
+$ sudo yum -y install httpd
+```
+- Apacheを起動
+```terminal
+$ sudo systemctl start httpd.service
+```
+- `systemctl`はプログラム起動停止を行うコマンド
+- Apacheが起動しているか確認
+```terminal
+$ sudo systemctl status httpd.service
+```
+`Active: active (running)`と表示されてれば起動
+- 全てのプロセスを表示でApacheが起動しているか確認
+```terminal
+$ ps -axu
+
+$ ps -axu | grep httpd
+```
+- Apacheを自動起動
+```terminal
+$ sudo systemctl enable httpd.service
+```
+- 自動起動されているか確認
+```terminal
+$ sudo systemctl is-enabled httpd.service
+```
