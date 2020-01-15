@@ -6,3 +6,4 @@ Udemy「[AWS：ゼロから実践するAmazon Web Services。手を動かしな�
 2. [AWS初期設定](2.AWS初期設定.md)
 3. [VPCネットワークを構築](3.VPCネットワークを構築.md)
 4. [EC2 Webサーバーを構築](4.EC2%20Webサーバーを構築.md)
+5. [Route53 ドメインを登録](5.Route53%20ドメインを登録.md)
