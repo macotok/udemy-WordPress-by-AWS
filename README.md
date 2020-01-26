@@ -8,3 +8,4 @@ Udemy「[AWS：ゼロから実践するAmazon Web Services。手を動かしな�
 4. [EC2 Webサーバーを構築](4.EC2%20Webサーバーを構築.md)
 5. [Route53 ドメインを登録](5.Route53%20ドメインを登録.md)
 6. [RDS DBサーバーを構築](6.RDS%20DBサーバーを構築.md)
+7. [EC2 WordPressを構築](7.EC2%20WordPressを構築.md)
