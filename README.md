@@ -10,3 +10,4 @@ Udemy「[AWS：ゼロから実践するAmazon Web Services。手を動かしな�
 6. [RDS DBサーバーを構築](6.RDS%20DBサーバーを構築.md)
 7. [EC2 WordPressを構築](7.EC2%20WordPressを構築.md)
 8. [S3/CloudFrontで画像配信](8.S3%20CloudFrontで画像を配信.md)
+9. [ELB Webレイヤーを冗長化](9.ELB%20Webレイヤーを冗長化.md)
