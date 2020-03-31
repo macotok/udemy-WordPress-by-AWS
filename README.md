@@ -13,3 +13,4 @@ Udemy「[AWS：ゼロから実践するAmazon Web Services。手を動かしな�
 9. [ELB Webレイヤーを冗長化](9.ELB%20Webレイヤーを冗長化.md)
 10. [RDS DBレイヤーを冗長化](10.RDS%20DBレイヤーを冗長化.md)
 11. [CloudWatch システムを監視](11.CloudWatch%20システムを監視.md)
+12. [IAM アクセス権限を管理](12.IAM%20アクセス権限を管理.md)
